@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2422395739262970648}
   - component: {fileID: 3987937210063094602}
+  - component: {fileID: 1344536399190454114}
   - component: {fileID: 3408245780151933650}
   m_Layer: 0
   m_Name: AlvoPulante
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3581990855741398478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.25, y: 0.36446118, z: 5.39}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,6 +89,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1344536399190454114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581990855741398478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f581c7bf106424a80a1f9b4093f0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
 --- !u!65 &3408245780151933650
 BoxCollider:
   m_ObjectHideFlags: 0
