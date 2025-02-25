@@ -6,7 +6,6 @@ public class PlayerCam : MonoBehaviour
 {
     public float sensX;
     public float sensY;
-    public Transform orientation;
 
     // Variáveis para o zoom
     public float zoomFOV = 80f; // Campo de visão durante o zoom
@@ -39,7 +38,6 @@ public class PlayerCam : MonoBehaviour
 
         // Rotaciona a câmera e a orientação
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
         // Lógica do zoom
         if (Input.GetMouseButton(1)) // Botão direito do mouse pressionado
