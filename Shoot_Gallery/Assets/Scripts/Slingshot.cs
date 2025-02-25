@@ -9,7 +9,8 @@ public class Slingshot : MonoBehaviour
     [@SerializeField]
     public int bullets = 20;
     public float fireDelay = 1f;
-    public float bulletSpeed = 2f;
+
+    public GameObject playerObj;
     public GameObject bullet;
 
     private bool canFire = true;
@@ -18,14 +19,14 @@ public class Slingshot : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0) && canFire == true && bullets >= 1)
         {
-            fire(bulletSpeed);
+            fire();
         }
 
     }
 
-    public void fire(float speed)
+    public void fire()
     {
-        //Instantiate
+        Instantiate(bullet, playerObj.transform.position, playerObj.transform.rotation);
         bullets--;
         StartCoroutine(fireRate(fireDelay));
     }
