@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3987937210063094602}
   - component: {fileID: 1344536399190454114}
   - component: {fileID: 3408245780151933650}
+  - component: {fileID: -1954438426699738898}
   m_Layer: 0
   m_Name: AlvoPulante
   m_TagString: alvos
@@ -123,3 +124,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.81, y: 3.78, z: 1.8133465}
   m_Center: {x: 0, y: 0, z: 0.8066732}
+--- !u!114 &-1954438426699738898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581990855741398478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a38933c2d6062499d0b9847b72a0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 10
