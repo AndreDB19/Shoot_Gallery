@@ -1059,6 +1059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 547512963}
+  - component: {fileID: 547512964}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1084,6 +1085,25 @@ Transform:
   - {fileID: 498394634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547512964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547512962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c948dd9592fe4419ed2651c0bc32ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlvoNormal: {fileID: 3809999814637656559, guid: 7776ae627ada47749aa9945b5b5c2f9d, type: 3}
+  AlvoRapido: {fileID: 1825390324541520939, guid: 3fa9dc920d82a27449908afdbddcedf4, type: 3}
+  AlvoPulante: {fileID: 3581990855741398478, guid: 32a05dc34d74fdc4b8a9f973d1c21f8e, type: 3}
+  spawnEsquerda: {fileID: 1932694371}
+  spawnDireita: {fileID: 930366923}
+  spawnCentro: {fileID: 1210236097}
+  script: []
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1234,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930366925}
-  - component: {fileID: 930366924}
   m_Layer: 0
   m_Name: spawnDireita
   m_TagString: Untagged
@@ -1222,21 +1241,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &930366924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930366923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c3c5f20ab4c5b449025f544401d55a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlvoNormal: {fileID: 3809999814637656559, guid: 7776ae627ada47749aa9945b5b5c2f9d, type: 3}
-  AlvoRapido: {fileID: 1825390324541520939, guid: 3fa9dc920d82a27449908afdbddcedf4, type: 3}
-  script: []
 --- !u!4 &930366925
 Transform:
   m_ObjectHideFlags: 0
@@ -1475,7 +1479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210236099}
-  - component: {fileID: 1210236098}
   m_Layer: 0
   m_Name: SpawnCentro
   m_TagString: Untagged
@@ -1483,20 +1486,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1210236098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210236097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f046d6ba49e9f8458f25bb443130319, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlvoPulante: {fileID: 3581990855741398478, guid: 32a05dc34d74fdc4b8a9f973d1c21f8e, type: 3}
-  script: []
 --- !u!4 &1210236099
 Transform:
   m_ObjectHideFlags: 0
@@ -2301,7 +2290,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1932694373}
-  - component: {fileID: 1932694372}
   m_Layer: 0
   m_Name: spawnEsquerda
   m_TagString: Untagged
@@ -2309,21 +2297,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1932694372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1932694371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c948dd9592fe4419ed2651c0bc32ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlvoNormal: {fileID: 3809999814637656559, guid: 7776ae627ada47749aa9945b5b5c2f9d, type: 3}
-  AlvoRapido: {fileID: 1825390324541520939, guid: 3fa9dc920d82a27449908afdbddcedf4, type: 3}
-  script: []
 --- !u!4 &1932694373
 Transform:
   m_ObjectHideFlags: 0
