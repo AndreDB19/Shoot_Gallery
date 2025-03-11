@@ -5,8 +5,9 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance; // Singleton para facilitar o acesso
 
-    public int score = 0;
+    public static int score = 0;
     public Text scoreText; // Referência ao texto da UI que exibirá a pontuação
+    public Text scoreMenuText;
 
     private void Awake()
     {
@@ -23,11 +24,12 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreUI();
     }
 
-    private void UpdateScoreUI()
+    public void UpdateScoreUI()
     {
         if (scoreText != null)
         {
             scoreText.text = "Score: " + score;
+            scoreMenuText.text = "Score: " + score;
         }
     }
 

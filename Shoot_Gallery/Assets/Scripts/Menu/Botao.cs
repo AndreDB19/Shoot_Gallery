@@ -4,36 +4,42 @@ using System.Collections;
 
 public class Botao : MonoBehaviour
 {
-public Canvas Menu;
-public Canvas Tutorial;
-void Start()
-{
-    Menu.enabled = true;
-    Tutorial.enabled = false;
-}
-public void Jogar()
-{
-    SceneManager.LoadScene("SampleScene");
-}
+    public Canvas Menu;
+    public Canvas Tutorial;
 
-public void Sair()
-{
-    Application.Quit();
-}
+    public string cena;
+    void Start()
+    {
+        Menu.enabled = true;
+        Tutorial.enabled = false;
+    }
+    public void Jogar()
+    {
+        SceneManager.LoadScene(cena);
+    }
 
-public void ComoJogar()
-{
-if(Menu.enabled == true)
-{
-    Menu.enabled = false;
-    Tutorial.enabled = true;
-}
-else
-{
-    Menu.enabled = true;
-    Tutorial.enabled = false;
-}
+    public void Sair()
+    {
+        Application.Quit();
+    }
 
-}
+    public void ComoJogar()
+    {
+        if(Menu.enabled == true)
+        {
+            Menu.enabled = false;
+            Tutorial.enabled = true;
+        }
+        else
+        {
+            Menu.enabled = true;
+            Tutorial.enabled = false;
+        }
+
+    }
+
+
+
+
 
 }

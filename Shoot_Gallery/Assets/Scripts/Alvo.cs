@@ -1,21 +1,21 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Alvo : MonoBehaviour
 {
-    Transform transform;
+
 
     public int direction;
     Vector3 position1;
     Vector3 position2;
     
-
     private float speed;
     
     int count;
 
     void Start()
     {
-        transform = GetComponent<Transform>();
+
 
         MovePosition();
 
@@ -24,7 +24,9 @@ public class Alvo : MonoBehaviour
 
     private void FixedUpdate() 
     {
+        transform.Rotate(new Vector3(0f,3f, 0f));
         move();
+        
     }
 
     private void move()
@@ -41,17 +43,20 @@ public class Alvo : MonoBehaviour
             if(direction == 3 || direction == 4)
             {
                 Destroy(gameObject);
+                GameController.life -= 1;
             }
         }
 
-        if(count >= 150)
+        if(count >= 100)
         {
             transform.position = Vector3.MoveTowards(transform.position, position2, speed);
         }
 
-        if(Vector3.Distance(transform.position, position2) < 0.05f && count >= 150)
+        if(Vector3.Distance(transform.position, position2) < 0.05f && count >= 100)
         {
             Destroy(gameObject);
+            GameController.life -= 1;
+
         }
     }
 
