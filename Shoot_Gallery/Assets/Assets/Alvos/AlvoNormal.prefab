@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6022857426846608397}
   - component: {fileID: 6706357643945284057}
   - component: {fileID: 2290570068694972020}
+  - component: {fileID: 6621186995088261205}
   m_Layer: 0
   m_Name: AlvoNormal
   m_TagString: alvos
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: da5644d47eb20d74f94b0e9be433bc21, type: 3}
+  m_Sprite: {fileID: 782883840, guid: a91845e6455946c4cbc2caae180e3f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,3 +138,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+--- !u!114 &6621186995088261205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3809999814637656559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0f9c337076e3e48a35eb439ba3f0f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boom: {fileID: 1825390324541520939, guid: ef67adeea685acd409eb561d812dc296, type: 3}

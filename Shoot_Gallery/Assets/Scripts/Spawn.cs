@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
@@ -54,6 +54,10 @@ public class Spawn : MonoBehaviour
 
             
 
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+                Application.Quit();
         }
 
     }

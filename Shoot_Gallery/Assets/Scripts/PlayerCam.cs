@@ -44,8 +44,8 @@ public class PlayerCam : MonoBehaviour
         {
             // Aplica o zoom
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, zoomFOV, zoomSpeed * Time.deltaTime);
-            sensX = 50;
-            sensY = 50;
+            sensX = 32;
+            sensY = 32;
             if (cam.fieldOfView < 3)
             {
                 zoomSpeed = 1;
