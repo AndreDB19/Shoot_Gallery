@@ -26,7 +26,7 @@ public class Spawn : MonoBehaviour
 
     public IEnumerator Spawning()
     {
-        
+        yield return new WaitForSeconds(2f);
         spawner = Random.Range(1, 4);
             
             if(spawner == 3){
@@ -36,7 +36,7 @@ public class Spawn : MonoBehaviour
                 {
                     direction.direction = 5;
                 }
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(3f);
             }
             else
             {
@@ -51,7 +51,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 1;
                             }
-                            yield return new WaitForSeconds(4f);
+                            yield return new WaitForSeconds(2f);
                         }
                         if(alvo == 2){
                             Instantiate(AlvoRapido, spawnEsquerda.transform);
@@ -60,7 +60,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 3;
                             }
-                            yield return new WaitForSeconds(3f);
+                            yield return new WaitForSeconds(1f);
                         }
                         if(alvo == 3){
                             Instantiate(AlvoRapido, spawnEsquerda.transform);
@@ -79,7 +79,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 3;
                             }
-                            yield return new WaitForSeconds(3f);
+                            yield return new WaitForSeconds(1f);
                         }
                     break;
                     case 2:
@@ -90,7 +90,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 2;
                             }
-                            yield return new WaitForSeconds(4f);
+                            yield return new WaitForSeconds(2f);
                         }
                         if(alvo == 2){
                             Instantiate(AlvoRapido, spawnDireita.transform);
@@ -99,7 +99,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 4;
                             }
-                            yield return new WaitForSeconds(3f);
+                            yield return new WaitForSeconds(1f);
                         }
                         if(alvo == 3){
                             Instantiate(AlvoRapido, spawnDireita.transform);
@@ -117,7 +117,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 4;
                             }
-                            yield return new WaitForSeconds(3f);
+                            yield return new WaitForSeconds(1f);
                         }
                     break;
                 }

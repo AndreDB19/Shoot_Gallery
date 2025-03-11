@@ -6,7 +6,7 @@ public class BulletScript : MonoBehaviour
 
     Rigidbody rb;
 
-    public float bulletSpeed = 2f;
+    public float bulletSpeed = 5f;
 
     private void Start()
     {

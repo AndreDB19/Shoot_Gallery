@@ -38,11 +38,8 @@ public class Botao : MonoBehaviour
 
     }
 
-    public void reiniciar()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
 
-    
+
+
 
 }
