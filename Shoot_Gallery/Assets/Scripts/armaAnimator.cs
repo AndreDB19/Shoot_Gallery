@@ -10,7 +10,7 @@ public class WeaponController : MonoBehaviour
     void Update()
     {
         // Verifica se o botão esquerdo do mouse foi pressionado e se o cooldown acabou
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime && sl.bullets != 0)
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime )
         {
             // Ativa o parâmetro "Shoot" para iniciar a animação
             armaAnimator.SetBool("Shoot", true);

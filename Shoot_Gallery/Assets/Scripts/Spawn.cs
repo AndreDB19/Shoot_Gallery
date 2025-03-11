@@ -20,57 +20,8 @@ public class Spawn : MonoBehaviour
 
     void Start()
     {
-<<<<<<< HEAD
-        count++;
 
-        switch (count)
-        {
-            case 300:
-                Instantiate(AlvoNormal, transform);
-                script = GetComponentsInChildren<Alvo>();
-                foreach (Alvo direction in script)
-                {
-                    direction.direction = 1;
-                }
-                break;
-
-            case 1100:
-                Instantiate(AlvoNormal, transform);
-                script = GetComponentsInChildren<Alvo>();
-                foreach (Alvo direction in script)
-                {
-                    direction.direction = 1;
-                }
-                break;
-
-            case 1400:
-                Instantiate(AlvoRapido, transform);
-                script = GetComponentsInChildren<Alvo>();
-                foreach (Alvo direction in script)
-                {
-                    direction.direction = 3;
-                }
-                break;
-
-            case 1425:
-                Instantiate(AlvoRapido, transform);
-                script = GetComponentsInChildren<Alvo>();
-                foreach (Alvo direction in script)
-                {
-                    direction.direction = 3;
-                }
-                break;
-
-            
-
-        }
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-                Application.Quit();
-        }
-=======
         StartCoroutine(Spawning());
->>>>>>> 4e93cf9323c2f05a0281e1680387bc9fe3a99567
 
     }
 

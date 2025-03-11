@@ -17,12 +17,8 @@ public class BulletScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Bala colidiu com:"  + collision.gameObject.name);
-        // Verifica se o objeto atingiu algo
-        if (collision.gameObject.CompareTag("alvos") || collision.gameObject.CompareTag("Wall"))
-        {
-            // Destroi o objeto
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
+
     }
 
 }

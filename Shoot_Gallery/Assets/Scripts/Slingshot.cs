@@ -7,13 +7,10 @@ using UnityEngine.InputSystem;
 public class Slingshot : MonoBehaviour
 {
     [@SerializeField]
-<<<<<<< HEAD
-    public int bullets = 15;
-    public float fireDelay = 10f;
-=======
+
 
     public float fireDelay;
->>>>>>> 4e93cf9323c2f05a0281e1680387bc9fe3a99567
+
 
     public GameObject playerObj;
     public GameObject bullet;
