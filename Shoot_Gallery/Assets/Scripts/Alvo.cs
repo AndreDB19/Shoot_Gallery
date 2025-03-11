@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Alvo : MonoBehaviour
 {
-    Transform transform;
+
 
     public int direction;
     Vector3 position1;
@@ -15,7 +15,7 @@ public class Alvo : MonoBehaviour
 
     void Start()
     {
-        transform = GetComponent<Transform>();
+
 
         MovePosition();
 
@@ -44,7 +44,7 @@ public class Alvo : MonoBehaviour
             }
         }
 
-        if(count >= 150)
+        if(count >= 100)
         {
             transform.position = Vector3.MoveTowards(transform.position, position2, speed);
         }
@@ -52,6 +52,7 @@ public class Alvo : MonoBehaviour
         if(Vector3.Distance(transform.position, position2) < 0.05f && count >= 150)
         {
             Destroy(gameObject);
+            
         }
     }
 

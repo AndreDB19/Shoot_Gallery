@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.UI;
 
 public class BulletText : MonoBehaviour
@@ -32,4 +32,4 @@ public class BulletText : MonoBehaviour
             bulletText.text = "Bullet: " + bullet;
         }
     }
-}
+}*/

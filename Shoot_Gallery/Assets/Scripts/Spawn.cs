@@ -51,7 +51,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 1;
                             }
-                            yield return new WaitForSeconds(5f);
+                            yield return new WaitForSeconds(4f);
                         }
                         if(alvo == 2){
                             Instantiate(AlvoRapido, spawnEsquerda.transform);
@@ -90,7 +90,7 @@ public class Spawn : MonoBehaviour
                             {
                                 direction.direction = 2;
                             }
-                            yield return new WaitForSeconds(5f);
+                            yield return new WaitForSeconds(4f);
                         }
                         if(alvo == 2){
                             Instantiate(AlvoRapido, spawnDireita.transform);

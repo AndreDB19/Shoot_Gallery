@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 public class Slingshot : MonoBehaviour
 {
     [@SerializeField]
-    public int bullets;
-    public float fireDelay = 1f;
+
+    public float fireDelay;
 
     public GameObject playerObj;
     public GameObject bullet;
@@ -17,7 +17,7 @@ public class Slingshot : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0) && canFire == true && bullets >= 1)
+        if(Input.GetKeyDown(KeyCode.Mouse0) && canFire == true )
         {
             fire();
         }
@@ -27,7 +27,6 @@ public class Slingshot : MonoBehaviour
     public void fire()
     {
         Instantiate(bullet, playerObj.transform.position, playerObj.transform.rotation);
-        bullets--;
         StartCoroutine(fireRate(fireDelay));
     }
     public IEnumerator fireRate(float fireDelay)
@@ -35,6 +34,7 @@ public class Slingshot : MonoBehaviour
         canFire = false;
         yield return new WaitForSeconds(fireDelay);
         canFire = true;
+        Debug.Log("Atirar:"  + canFire);
     }
 
 }
